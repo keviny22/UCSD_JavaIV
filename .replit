@@ -1,0 +1,2 @@
+language = "java10"
+run = "cd Lesson2RegEx/src && java Lesson2RegEx ../../neighbor-dump.txt"
