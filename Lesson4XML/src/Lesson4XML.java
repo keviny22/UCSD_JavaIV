@@ -14,7 +14,7 @@ import java.io.IOException;
 public class Lesson4XML {
 
     public static void main(String[] args) throws IOException, XPathExpressionException, ParserConfigurationException, SAXException {
-        String inputFile = "JobResult_UCSDExt.xml";
+        String inputFile = "../JobResult_UCSDExt.xml";
         xpathParser(inputFile);
         domParser(inputFile);
         saxParser(inputFile);
@@ -71,9 +71,12 @@ public class Lesson4XML {
             public void endElement(String uri, String localName, String qName) {
 
                 switch (qName) {
-                    case "serial" -> System.out.printf("serial : %s%n", elementValue.toString());
-                    case "visible-string" -> System.out.printf("visible-string : %s%n", elementValue.toString());
-                    case "unsigned" -> System.out.printf("unsigned : %s%n", elementValue.toString());
+                    case "serial":
+                        System.out.printf("serial : %s%n", elementValue.toString());
+                    case "visible-string":
+                        System.out.printf("visible-string : %s%n", elementValue.toString());
+                    case "unsigned":
+                        System.out.printf("unsigned : %s%n", elementValue.toString());
                 }
 
             }
