@@ -41,7 +41,7 @@ class Lesson7Database {
     public static void main(String[] args) throws SQLException, IOException {
         String inputFile = args[0];
         System.out.println("Connecting to the database: Done.");
-        Connection connection = DriverManager.getConnection("jdbc:sqlite:./chinook.db");
+        Connection connection = DriverManager.getConnection("jdbc:sqlite:./database.db");
         loadDatabase(connection, inputFile );
         displayData(connection);
     }
