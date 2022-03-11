@@ -1,2 +1,3 @@
 language = "java10"
-run = "cd Lesson4XML/src && java Lesson4XML"
+run = "cd Lesson8Modules-Kevin-Young &&  javac com.horstmann.greet/module-info.java com.horstmann.greet/com/horstmann/greet/Greeter.java com.horstmann.greet/com/horstmann/greet/internal/GreeterImpl.java
+ &&  java -p ch15.sec05:com.horstmann.greet -m ch15.sec05/com/horstmann/hello/HelloWorld.java"
